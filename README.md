@@ -1,5 +1,5 @@
 # pytorch_classification
-
+来源于https://github.com/lxztju/pytorch_classification；由于作者部分代码未更新，运行某些代码会报错，所以把他之前的代码先研究研究。
 利用pytorch实现图像分类，其中包含的densenet，resnext，mobilenet，efficientnet等图像分类网络，可以根据需要再行利用torchvision扩展其他的分类算法
 
 ## 实现功能
@@ -51,7 +51,7 @@ python predict.py
 
 
 代码存在于`cnn_ml.py`中, 利用训练好的cnn特征提取器，将得到的特征保存为pkl文件，然后训练svm分类器， 并将分类器模型保存，然后读取预测
-
+这里原作者用的是efficientnet,不然model.提取特征会报错。
 
 
 ### flask云端部署
